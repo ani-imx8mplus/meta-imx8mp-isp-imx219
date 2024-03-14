@@ -1,0 +1,53 @@
+NXP Software Content Register
+
+Release Name:           IMX8MP IMX219 Sensor Enablement
+Date Created:           Mar-2023
+Package License:        LA_OPT_NXP_Software_License v44 March 2023 - Additional distribution license granted - Section 2.3 applies
+License File:           LICENSE.txt
+Description:            Enabled IMX219 Sensor on i.MX8MP EVK with ISP functions
+
+--------------------------------------------
+BSP Packages
+--------------------------------------------
+
+Package:                     linux-imx.git
+Patch Location:              meta-imx8mp-isp-imx219/recipes-bsp/linux-imx/linux-imx
+Version:                     5.15
+Outgoing License:            GPL-2.0 WITH Linux-syscall-note
+License File:                COPYING
+Package Category:            BSP
+Type of Content:             source
+Description and comments:    The Linux kernel with i.MX-specific drivers
+Release Location:            https://github.com/nxp-imx/linux-imx -b lf-5.15.71-2.2.0
+Origin:                      NXP (GPL-2.0)
+                             kernel.org (GPL-2.0) - https://www.kernel.org/
+
+--------------------------------------------
+
+Graphics Packages
+--------------------------------------------
+
+Package:                     isp-vvcam.git
+Patch Location:              meta-imx8mp-isp-imx219/recipes-isp-vvcam/vvcam/kernel-module-isp-vvcam
+Version:                     4.2.2.20.0
+Outgoing License:            GPL-2.0
+License File:                vvcam/LICENSE
+Package Category:            Graphics
+Type of Content:             ISP Kernel Module source
+Description and comments:    Kernel Loadable Module for ISP
+Release Location:            https://github.com/nxp-imx/isp-vvcam -b lf-5.15.71-2.2.0
+Origin:                      VeriSilicon Holdings Co., Ltd. (GPL-2.0)
+
+
+--------------------------------------------
+
+Package:                     isp-imx-4.2.2.20.0.bin
+Patch Location:              meta-imx8mp-isp-imx/recipes-isp-imx/sdk/isp-imx
+Version:                     4.2.2.20.0
+Outgoing License:            LA_OPT_NXP_Software_License v39 August 2022 Additional distribution license granted - Section 2.3 applies
+License File:                COPYING
+Package Category:            Graphics
+Type of Content:             binary and source
+Description and comments:    i.MX software ISP
+Release Location:            Mirror
+Origin:                      VeriSilicon Holdings Co., Ltd. (proprietary)
